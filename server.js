@@ -9,7 +9,7 @@ const port = process.env.PORT
 
 mongoose.connect(process.env.BASE_URL).then(console.log('Connected')).catch((err)=>console.log(err))
 
-app.use(cors({ origin: 'https://sklep-a99i.onrender.com' }));
+app.use(cors({ origin: 'https://sklep-api.onrender.com' }));
 app.listen(port,()=>{
 console.log(`Server working on port ${port}`)
 })
