@@ -7,7 +7,7 @@ const mongoose = require('mongoose')
 dotenv.config()
 const port = process.env.PORT
 
-mongoose.connect(process.env.BASE_URL).then(console.log('Connected')).catch((err)=>console.log(err))
+mongoose.connect(process.env.BASE_URL).then(console.log('Connected :')).catch((err)=>console.log(err))
 
 app.use(cors({ origin: 'https://sklep-3lga.onrender.com'}));
 app.listen(port,()=>{
